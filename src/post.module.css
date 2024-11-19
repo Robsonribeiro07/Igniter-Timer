@@ -1,0 +1,14 @@
+.active {
+    background-color: black;
+    color: wheat;
+    transition: 0.5s;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.false {
+  
+    background-color: white ;
+    transition: 0.5s;
+
+    color: black;
+}
