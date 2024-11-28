@@ -1,16 +1,15 @@
-import { Routes, Route} from 'react-router-dom'
-import { Home } from './pages/Home/home'
-import { History } from './pages/History'
-import { DefaultLayout } from './layout/DefaultLayout'
-export function Router(){
-    return(
-        <Routes>
-           <Route path='/' element={<DefaultLayout/>}>
-           <Route path='/' element={<Home/>}/>
-           <Route path='/history' element={<History/>}/>
+import {  Routes, Route } from 'react-router-dom'; // Usando BrowserRouter diretamente
+import { Home } from './pages/Home/home';  // Seu componente Home
+import { History } from './pages/History';  // Seu componente History
+import { DefaultLayout } from './layout/DefaultLayout';  // Layout principal
 
-           </Route>
-         
-        </Routes>
-    )
+export function AppRouter() {
+  return (
+      <Routes>
+        <Route path="/" element={<DefaultLayout />}>  {/* Layout que envolve todas as páginas */}
+          <Route index element={<Home />} />  {/* Página inicial */}
+          <Route path="history" element={<History />} />  {/* Página de histórico */}
+        </Route>
+      </Routes>
+  );
 }

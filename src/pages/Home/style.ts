@@ -13,8 +13,15 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3.5rem
+    gap: 3.5rem;
+
+    @media screen and (max-width: 768px) {
+      width: 100vw;
+    } 
+      
+      
 }
+ 
 `   
 export const FormContainer = styled.div`
   width: 100%; 
@@ -26,6 +33,8 @@ export const FormContainer = styled.div`
   flex-wrap: wrap;
   font-weight: bold;
   font-size: 1.125rem;
+  
+
 
 `
 
@@ -37,13 +46,25 @@ export const CountDownContainer = styled.div`
     line-height: 8rem;
     color: ${props => props.theme['gray-100']};
     display: flex;
-    
     gap: 1rem;
+    
+    
 
     span {
         background: ${props => props.theme['gray-700']};
         padding: 2rem 1rem;
         border-radius: 10px 
+    }
+    @media screen and (max-width: 768px) {
+      span {
+        padding: 0.5rem 1rem;
+        font-size: 4rem;
+        line-height: 10rem;
+      }
+    } 
+      
+    @media screen and (max-width: 768px) {
+
     }
 
 `

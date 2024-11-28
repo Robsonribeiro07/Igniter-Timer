@@ -3,7 +3,7 @@ import { GlobalStyle } from "./styles/theme/global";
 import { defaultTheme } from "./styles/theme/default";
 
 import { BrowserRouter} from 'react-router-dom'
-import { Router } from "./router";
+import { AppRouter } from "./router";
 import { CycleProvider } from "./provider/NewCycleProvider";
 export function App(){
 
@@ -15,7 +15,7 @@ export function App(){
     <ThemeProvider theme={defaultTheme}>
    <CycleProvider>
 
-        <Router />
+        <AppRouter />
     </CycleProvider>
 
     <GlobalStyle/>
