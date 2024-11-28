@@ -341,7 +341,11 @@ margin-top: 2rem;
    
    @media screen and (max-width: 768px) {
       height: 100vh;
+   margin: 0;
+   padding: 0;
+   height: 100vh;
 
+      
       
    }
 `,bk=be.header`
