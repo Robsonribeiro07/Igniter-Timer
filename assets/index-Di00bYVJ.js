@@ -341,8 +341,8 @@ margin-top: 2rem;
    
    @media screen and (max-width: 768px) {
       height: 100vh;
-   margin: 0;
-   padding: 0;
+   margin: 1rem auto;;
+   padding: 1rem;
    height: 100vh;
 
       
